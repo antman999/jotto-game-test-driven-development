@@ -4,9 +4,9 @@ import EnzymeAdapter from 'enzyme-adapter-react-16'
 import { findByTestAttr,checkProps} from '../test/testUtils';
 import Congrats from './Congrats'
 
-Enzyme.configure({ adapter: new EnzymeAdapter() })
-const defaultProps = {success : false }
 
+const defaultProps = {success : false }
+ 
 const setup = (props = {}) => {
 //passing the ...props will pass whatever is given so if true will pass true 
   const setupProps = {...defaultProps, ...props}
@@ -22,7 +22,7 @@ test('renders without error', () => {
 
 test('should render no text when the success prop is false ', () => {
   const wrapper = setup({ success: false })
-  const component = findByTestAttr(wrapper, 'component-congrats')
+  const component = findByTestAttr(wrapper,'component-congrats')
   expect(component.text()).toBe('')
 })
 
