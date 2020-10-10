@@ -9,6 +9,23 @@ const GuessedWords = (props) => {
         Try to guess the secret word !
       </span>
     )
+  } else {
+    contents = (
+			<div className='guessed-words'>
+				<h3>Guessed words</h3>
+				<table>
+					<thead>
+						<tr>
+							<th>Guess</th>
+							<th>Matching letters</th>
+						</tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+          </table>
+			</div>
+		);
   }
   return (
     <div className="component-guessed-words">
