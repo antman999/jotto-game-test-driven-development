@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-export const GuessedWords = (props) => {
+const GuessedWords = (props) => {
   let contents 
   if (props.guessedWords.length === 0) {
     contents = (
@@ -26,3 +26,5 @@ export const GuessedWords = (props) => {
 			})
 		).isRequired,
   };
+
+  export default GuessedWords
