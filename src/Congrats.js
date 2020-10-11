@@ -6,7 +6,7 @@ export default function Congrats(props) {
   
   if (props.success) {
     return (
-      <div className="component-congrats">
+      <div className="component-congrats" className='alert alert-success'>
         <span className="congrats-message">
           CONGRATS You guessed the word!
           </span>
